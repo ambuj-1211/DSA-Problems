@@ -1,5 +1,5 @@
 # cp-programs
-Here are all the DSA problems that solve on any plateform.
+Here are all the DSA problems that I'll solve on any plateform.
 # Data Structures and Algorithms
 ## Sorting techniques
 1. [Insertion sort](DS/sorting_techniques/insertion_sort.c)
