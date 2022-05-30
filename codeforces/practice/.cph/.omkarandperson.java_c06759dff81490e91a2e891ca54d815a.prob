@@ -1,0 +1,1 @@
+{"name":"Local: omkarandperson","url":"/Users/sanjeevzin/projects/cp-programs/codeforces/practice/omkarandperson.java","tests":[{"id":1653862329112,"input":"2\n4\n2 1 3 1\n2\n420 420","output":"1\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/sanjeevzin/projects/cp-programs/codeforces/practice/omkarandperson.java","group":"local","local":true}
