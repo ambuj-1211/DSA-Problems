@@ -1,7 +1,13 @@
-class testadd{
-    public static void main(String[] args){
-    int a []= {1,2,3,4,5,5,6};
-    System.out.println(a);
-    // System.out.println(a+1);
+class Solution {
+    public void reverseString(char[] s) {
+        helper(s,0,(s.length-1));
+    }
+    public void helper(char[] s, int i , int j){
+        if (i >= j)
+            return;
+        char t = s[i];
+        s[i]=s[j];
+        s[j]=t;
+        helper(s,++i,--j);
     }
 }
