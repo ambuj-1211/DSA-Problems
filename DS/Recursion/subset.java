@@ -1,17 +1,32 @@
+import java.util.*;
+
 class subset{
     public static void main(String[] args){
     String p = "";
     String s = "abc";
-    solution(p,s);
-
+    ArrayList<String> lis = subseq(p, s);
+    System.out.println("The subseqence is "+lis);
     }
     static void solution(String p, String up){
-        if(up == "" && p!="")
+        if(up.isEmpty())
         {
             System.out.println(p);
             return;
         }
-        solution(p+up.charAt(0),up.substring(1));
         solution(p,up.substring(1));
+        solution(p+up.charAt(0),up.substring(1));
+        
     }
+
+    static ArrayList<String> subseq(String p,  String u){
+        if(u.isEmpty()){
+            ArrayList<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        ArrayList<String> left= subseq(p+u.charAt(0),u.substring(1));
+        ArrayList<String> right = subseq(p,u.substring(1));
+        left.addAll(right);
+        return left;
+    } 
 }
