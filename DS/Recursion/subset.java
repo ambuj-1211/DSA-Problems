@@ -5,7 +5,7 @@ class subset{
     String p = "";
     String s = "abc";
     ArrayList<String> lis = subseq(p, s);
-    System.out.println("The subseqence is "+lis);
+    System.out.println(lis);
     }
     static void solution(String p, String up){
         if(up.isEmpty())
@@ -28,5 +28,15 @@ class subset{
         ArrayList<String> right = subseq(p,u.substring(1));
         left.addAll(right);
         return left;
+    } 
+    // For ascii we can just need to do this ch+0 this will give us the ascii value of the character ch.
+
+    static ArrayList<String> sol(int[] arr){
+        List<List<Integer>> ans = new ArrayList<>();
+        ans.add(new ArrayList<>());
+
+        for(int i: arr){
+            
+        }
     } 
 }
